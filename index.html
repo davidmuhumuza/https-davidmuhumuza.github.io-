@@ -2,6 +2,18 @@
 <html>  
 <head> 
   <title> BIOMEDICAL DATA  SHARE APP</title>
+    <script>
+    var currentImageIndex = 0;
+    var images = ['img/a.png', 'img/b.png']; // Add more image URLs if needed
+
+    function changeImage() {
+      var banner = document.querySelector('.banner');
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      banner.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+    }
+
+    setInterval(changeImage, 2000); // Change image every 2 seconds
+  </script>
   <meta charset=" <div class="flex-row">
           
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
@@ -43,18 +55,6 @@
     </div>
     <!--End Header-->
     <!-------------------------------------------------------------------------------------------->
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <img class="image" src="img/b.png">
-          </div>
-          <div class="flex-item flex-column">
-           
-          </div>
-        </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
@@ -81,16 +81,8 @@
               <button class="custom-button custom-button-primary">NORMAL</button>
               <button class="custom-button custom-button-danger">CRITICAL</button>
               <button class="custom-button custom-button-info">EMERGENCY</button>
-              <a class="custom-button" target="_blank" href="https://github.com/yenchiah/project-website-template" target="_blank">Hyperlink</a>
-            </div>
-          
-
-            
-        <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-            <p class="text badge-text">MY HOSPITAL</p>
-          </div>
-          <div class="flex-item flex-column">
+            </div>                 
+       
             <div class="control-group">
               <a href="javascript:void(0)" target="_blank" class="custom-image-button">
                 <img src="img/app-store-badge.png" width="150">
@@ -105,12 +97,7 @@
         <!--End Text with Buttons-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text with Images and Image buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-      primary
-          
-          </div>
-        </div>
+      
         
     <div class="banner" style="background: url('img/b.png') no-repeat center; background-size: cover; height: 500px;">
       <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
@@ -128,13 +115,7 @@
       <div class="content-table flex-column">
       
         <!--Start Credits-->
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text text-small text-italic add-top-margin-large">
-              Credits: <span class="highlight-text"> Programmers</span>: Alex and dav  <span class="highlight-text"></span>:joan
-            </p>
-          </div>
-        </div>
+      
         <!--End Credits-->
         <!-------------------------------------------------------------------------------------------->
       </div>
@@ -144,6 +125,8 @@
             
          
             <p class="text">
+              
+            Share#
            copyright @2023 Uganda
             </p>
             
