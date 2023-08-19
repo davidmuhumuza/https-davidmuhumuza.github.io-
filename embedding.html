@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html>
 
 <head>
@@ -11,13 +11,38 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
   <style>
     .menu-embedding {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5; /* Add a background color */
+    }
+    .iframe-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .faded-text {
+      opacity: 0.5;
     }
   </style>
 </head>
@@ -25,14 +50,17 @@
 <body class="force-no-scroll">
   <div class="menu-container"></div>
   <div class="iframe-container">
- 
-
     <iframe class="iframe" src="http://yenchiah.me/geo-heatmap/GeoHeatmap.html"></iframe>
   </div>
-   <div> 
-    <p> Tel:+256773078427</p>
-        <p> info@recordshare.com</p>
-   </div>
+  <div class="contact-info">
+    <p> Tel: +256773078427</p>
+    <p> info@recordshare.com</p>
+    <p><span class="faded-text"> OUR PARTNERS</span></p>
+    Hosiptal, 
+      Clinics!
+       School!
+   
+  </div>
 </body>
 
 </html>
