@@ -34,6 +34,24 @@
       font-weight: 700 !important;
     }
   </style>
+   <script>
+    var lines = [
+   
+      "   Patient-sharing app has the potential to revolutionize patient-provider interactions in the healthcare sector while addressing  biomedical data sharing challenges"        
+      " With improvement ofcommunication, access to medical resources, and overall patient outcomes."
+      " By embracing technology,this app can contribute to a more patient-centered and efficient healthcare system.",
+      // Add more lines as needed
+    ];
+    var currentLineIndex = 0;
+    var paragraphElement = document.querySelector('.text');
+
+    function changeLine() {
+      paragraphElement.textContent = lines[currentLineIndex];
+      currentLineIndex = (currentLineIndex + 1) % lines.length;
+    }
+
+    setInterval(changeLine, 5000); // Change line every 5 seconds
+  </script>
 </head>
 
 <body>
@@ -53,8 +71,8 @@
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
              Patient-sharing app has the potential to revolutionize patient-provider interactions in the healthcare sector while addressing  biomedical data sharing challenges        
-            With improvement ofcommunication, access to medical resources, and overall patient outcomes.
-              By embracing technology,this app can contribute to a more patient-centered and efficient healthcare system.
+             With improvement ofcommunication, access to medical resources, and overall patient outcomes.
+             By embracing technology,this app can contribute to a more patient-centered and efficient healthcare system.
             </p>
             
           </div>
