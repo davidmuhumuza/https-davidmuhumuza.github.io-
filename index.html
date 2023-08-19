@@ -2,6 +2,24 @@
 <html>  
 <head> 
   <title> BIOMEDICAL DATA  SHARE APP</title>
+  <script>
+    var paragraphs = [
+ "Patient-sharing app has the potential to revolutionize patient-provider interactions in the healthcare sector while addressing  biomedical data sharing challenges."
+              "With improvement ofcommunication, access to medical resources, and overall patient outcomes."
+             " By embracing technology,this app can contribute to a more patient-centered and efficient healthcare system."    
+               "This is a one of its kind sharing app for Hospitals in Uganda...",
+      // Add more paragraphs as needed
+    ];
+    var currentParagraphIndex = 0;
+    var paragraphElement = document.querySelector('.text');
+
+    function changeParagraph() {
+      paragraphElement.textContent = paragraphs[currentParagraphIndex];
+      currentParagraphIndex = (currentParagraphIndex + 1) % paragraphs.length;
+    }
+
+    setInterval(changeParagraph, 5000); // Change paragraph every 5 seconds
+  
     <script>
     var currentImageIndex = 0;
     var images = ['img/a.png', 'img/b.png']; // Add more image URLs if needed
@@ -12,7 +30,7 @@
       banner.style.backgroundImage = `url('${images[currentImageIndex]}')`;
     }
 
-    setInterval(changeImage, 2000); // Change image every 2 seconds
+    setInterval(changeImage, 3000); // Change image every 3 seconds
   </script>
   <meta charset=" <div class="flex-row">
           
