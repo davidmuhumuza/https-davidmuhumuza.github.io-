@@ -29,7 +29,9 @@
   <script>
     function toggleContact(contactType) {
       const element = document.getElementById(contactType);
-      element.classList.toggle('hidden');
+      if (element) {
+        element.classList.toggle('hidden');
+      }
     }
   </script>
 </head>
