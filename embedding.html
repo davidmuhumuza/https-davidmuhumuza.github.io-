@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,41 +11,31 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script>
-  function toggleContact(contactType) {
-    const element = document.getElementById(contactType);
-    element.classList.toggle('hidden');
-  }
-</script>
   <style>
     .menu-embedding {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
-   
     }
-      .hidden {
-    display: none;
-  }
-   .center-text {
-    text-align: center;
-  }
+
+    .hidden {
+      display: none;
+    }
+
+    .center-text {
+      text-align: center;
+    }
   </style>
 </head>
 
 <body class="force-no-scroll">
   <div class="menu-container"></div>
   <div class="iframe-container">
- 
-
     <iframe class="iframe" src="http://yenchiah.me/geo-heatmap/GeoHeatmap.html"></iframe>
   </div>
-  
 
-  </div>
-     <p>
+  <div class="center-text">
+    <p>
       <img src="img/wat.png" alt="WhatsApp Icon" onclick="toggleContact('whatsapp')">
       <span id="whatsapp" class="hidden">Tel: +256773078427</span>
     </p>
@@ -54,6 +44,13 @@
       <span id="email" class="hidden">info@recordshare.com</span>
     </p>
   </div>
+
+  <script>
+    function toggleContact(contactType) {
+      const element = document.getElementById(contactType);
+      element.classList.toggle('hidden');
+    }
+  </script>
 </body>
 
 </html>
