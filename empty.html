@@ -14,7 +14,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      var delayedParagraph = document.getElementById("delayed-paragraph");
+      delayedParagraph.style.display = "block";
+    }, 3000); // 2000 milliseconds = 2 seconds
+  });
+</script>
   <style>
+      body {
+    background-color: #f0f0f0; /* Grey color */
+  }
     .menu-index {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
@@ -34,10 +45,11 @@
              This is a one of its kind app that makes Biomedical Data shared between Doctors for Both Emergency and normal operation 
             <p> where the absence of the doctor is solved with just a click by the Patient.</p> 
             </p>
-            <h2>Heading 1</h2>
+            <h2>USEAGE</h2>
             <hr>
             <p class="text">
-              Simple to nevigate, secure  and Graphical user friendly   
+                          <p id="delayed-paragraph" class="text" style="display: none;">
+              Simple to navigate, secure  and Graphical user friendly   
          </p>          </div>
         </div>
       </div>
